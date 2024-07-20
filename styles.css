@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+.projects, .skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2em;
+}
+
+.projects li, .skills li {
+    margin: 1em;
+    padding: 1em;
+    border: 1px solid #333;
+    border-radius: 1em;
+    list-style: none;
+}
+
+.projects li:hover, .skills li:hover {
+    background-color: #333;
+    color: #fff;
+}
