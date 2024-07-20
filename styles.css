@@ -2,10 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: #333;
 }
 
 header {
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
     padding: 1em;
     text-align: center;
@@ -18,15 +20,39 @@ header {
     padding: 2em;
 }
 
+.projects h2, .skills h2 {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.projects ul, .skills ul {
+    list-style: none;
+    padding: 0;
+}
+
 .projects li, .skills li {
     margin: 1em;
     padding: 1em;
-    border: 1px solid #333;
+    border: 1px solid #fff;
     border-radius: 1em;
-    list-style: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .projects li:hover, .skills li:hover {
-    background-color: #333;
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+
+a {
     color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #ffeb3b;
 }
